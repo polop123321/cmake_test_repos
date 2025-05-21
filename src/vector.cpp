@@ -1,0 +1,25 @@
+#include "vector.h"
+
+using namespace std;
+
+vector::vector(float x, float y) {
+    this->x = x;
+    this->y = y;
+}
+
+float vector::getX() {
+    return this->x;
+}
+
+float vector::getY() {
+    return this->y;
+}
+
+void vector::setVector(float x, float y) {
+     this->x = x;
+     this->y = y;
+}
+
+void vector::output() {
+     cout << "vector[x:" << x << ", y:" << y << "]" << endl;
+}
