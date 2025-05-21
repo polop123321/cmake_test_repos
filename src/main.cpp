@@ -48,6 +48,10 @@ int main () {
     cout << "cos vec1 vec2: " << vec1.cos(vec2) << endl;//output cos of angle between vectors
 
     cout << endl;
+<<<<<<< HEAD
+    
+    return 0;//end program
+=======
 
     return init();//end program
 }
@@ -84,4 +88,5 @@ int init() {
     }
 
     glfwTerminate();
+>>>>>>> master
 }
