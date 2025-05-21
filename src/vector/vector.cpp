@@ -33,13 +33,13 @@ void vector::inf(string s) {
 }
 
 float vector::length() {
-    return sqrt(x * x + y * y);
+    return sqrt(x * x + y * y);//Pifagor's theorem
 }
 
 float vector::scalar(vector& v) {
-    return this->x * v.getX() + this->y * v.getY();
+    return this->x * v.getX() + this->y * v.getY();//Vector scalar multiply operation
 }
 
 float vector::cos(vector& v) {
-    return scalar(v) / (length() * v.length());
+    return scalar(v) / (length() * v.length());//cosA = ab/(|a||b|), where a and b - vectors
 }
