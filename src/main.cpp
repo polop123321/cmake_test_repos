@@ -4,13 +4,13 @@
 using namespace std;
 
 int main () {
-    cout << "Hello world" << endl;  
+    cout << "Hello world" << endl;
 
     cout << "Enter 2 vectors" << endl;
 
     cout << "vec1.x: ";
 
-    float x1, y1, x2, y2;
+    float x1, y1, x2, y2;//default values
 
     cin >> x1;
 
@@ -28,23 +28,23 @@ int main () {
 
     cout << endl;
 
-    vector vec1(x1, y1), vec2(x2, y2);
+    vector vec1(x1, y1), vec2(x2, y2);//creating objects (vectors)
 
-    vec1.inf("vec1");
-
-    cout << endl;
-
-    vec2.inf("vec2");
+    vec1.inf("vec1");//output vector1 details
 
     cout << endl;
 
-    cout << "scalar vec1 vec2: " << vec1.scalar(vec2) << endl;
+    vec2.inf("vec2");//output vector2 details
 
     cout << endl;
 
-    cout << "cos vec1 vec2: " << vec1.cos(vec2) << endl;
+    cout << "scalar vec1 vec2: " << vec1.scalar(vec2) << endl;//output vectors scalar multiply result
+
+    cout << endl;
+
+    cout << "cos vec1 vec2: " << vec1.cos(vec2) << endl;//output cos of angle between vectors
 
     cout << endl;
     
-    return 0;
+    return 0;//end program
 }
