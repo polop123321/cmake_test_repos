@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -16,6 +17,13 @@ void setVector (float x, float y);
 
 void output ();
 
+void inf(string s);
+
+float length();
+
+float scalar(vector& v);
+
+float cos(vector& v);
 private:
 float x, y;
 };

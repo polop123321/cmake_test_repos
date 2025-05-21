@@ -1,3 +1,4 @@
+#include <cmath>
 #include "vector.h"
 
 using namespace std;
@@ -23,3 +24,30 @@ void vector::setVector(float x, float y) {
 void vector::output() {
      cout << "vector[x:" << x << ", y:" << y << "]" << endl;
 }
+
+void vector::inf(string s) {
+    cout << "vector '" << s << "':" << endl;
+    cout << "x: " << x << endl;
+    cout << "y: " << y << endl;
+    cout << "length: " << length() << endl;
+}
+
+float vector::length() {
+    return sqrt(x * x + y * y);
+}
+
+float vector::scalar(vector& v) {
+    return this->x * v.getX() + this->y * v.getY();
+}
+
+float vector::cos(vector& v) {
+    return scalar(v) / (length() * v.length());
+}
+
+
+
+//float length();
+
+//float scalar(vector& v);
+
+//float cos(vector& v);
