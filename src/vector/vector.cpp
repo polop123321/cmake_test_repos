@@ -43,11 +43,3 @@ float vector::scalar(vector& v) {
 float vector::cos(vector& v) {
     return scalar(v) / (length() * v.length());
 }
-
-
-
-//float length();
-
-//float scalar(vector& v);
-
-//float cos(vector& v);
