@@ -1,7 +1,10 @@
 #include <iostream>
+#include <GLFW/glfw3.h>
 #include "vector/vector.h"
 
 using namespace std;
+
+int init();
 
 int main () {
     cout << "Hello world" << endl;
@@ -46,12 +49,10 @@ int main () {
 
     cout << endl;
 
-    init();
-    
-    return 0;//end program
+    return init();//end program
 }
 
-void init() {
+int init() {
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -73,7 +74,7 @@ void init() {
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
+        //glClear(GL_COLOR_BUFFER_BIT);
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
